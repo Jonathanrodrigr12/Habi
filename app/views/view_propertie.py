@@ -6,12 +6,12 @@ from app.utils.entities.entitity_propertie import ResponseModel, FilterModel
 router = APIRouter()
 
 
-@router.get("/properites", tags=["Propierties"], response_model=ResponseModel)
-def get_propertie():
+@router.get("/properties", tags=["Propierties"], response_model=ResponseModel)
+def get_properties():
     result = get_propertie()
     return result
 
-@router.post("/filter_properites", tags=["Propierties"], response_model=ResponseModel)
-def get_propertie(data: FilterModel):
+@router.post("/filter_properties", tags=["Propierties"], response_model=ResponseModel)
+def get_filter_properties(data: FilterModel):
     result = get_filter_propertie(data)
     return result

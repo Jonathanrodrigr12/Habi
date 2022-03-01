@@ -1,41 +1,5 @@
-[{
-    "data": [
-      {
-        "other": "and",
-    "dataFilter": [
-      "city",
-      "=",
-      "bogota"
-    ]
-      },
-  {
-        "other": "",
-    "dataFilter": [
-      "year",
-      ">=",
-      "2000"
-    ]
-      }
-    ]
-},
-{
-    "data": [
-      {
-        "other": "or",
-    "dataFilter": [
-      "city",
-      "=",
-      "bogota"
-    ]
-      },
-  {
-        "other": "",
-    "dataFilter": [
-      "city",
-      "=",
-      "medellin"
-    ]
-      }
-    ]
-  }
+[{"data": [{"other": "and","dataFilter": ["city","=","bogota"]},{"other": "","dataFilter":["year",">=","2000"]}]},
+{"data":[{"other": "or","dataFilter":["city","=","bogota"]},{"other": "","dataFilter":["city","=","medellin"]}]},
+{"data": [{"other": "", "dataFilter": ["city", "startswith", "b"]}]},
+{"data": [{"other": "", "dataFilter": ["city", "endswith", "n"]}]}
 ]

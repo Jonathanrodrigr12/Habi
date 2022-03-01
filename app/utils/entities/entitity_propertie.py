@@ -1,5 +1,5 @@
 from multiprocessing.dummy import Array
-from typing import List, Tuple
+from typing import List
 from pydantic import BaseModel
 
 #Las entidades se pueden crear en una sola clase por clase, es decir 
