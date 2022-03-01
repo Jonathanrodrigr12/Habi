@@ -1,0 +1,41 @@
+[{
+    "data": [
+      {
+        "other": "and",
+    "dataFilter": [
+      "city",
+      "=",
+      "bogota"
+    ]
+      },
+  {
+        "other": "",
+    "dataFilter": [
+      "year",
+      ">=",
+      "2000"
+    ]
+      }
+    ]
+},
+{
+    "data": [
+      {
+        "other": "or",
+    "dataFilter": [
+      "city",
+      "=",
+      "bogota"
+    ]
+      },
+  {
+        "other": "",
+    "dataFilter": [
+      "city",
+      "=",
+      "medellin"
+    ]
+      }
+    ]
+  }
+]

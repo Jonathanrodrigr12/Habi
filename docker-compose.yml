@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  first:
+    container_name: first
+    restart: unless-stopped
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      labels:
+        - poc
+    volumes:
+        - .:/code
+    command:
+      - /bin/sh
+      - -c
+      - |
+        gunicorn app.main:app --workers 2 \
+        --worker-class uvicorn.workers.UvicornWorker -b 0.0.0.0:6969
+
+    ports:
+      - 6969:6969
