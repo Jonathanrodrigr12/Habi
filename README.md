@@ -16,7 +16,7 @@ Se realiza la creacion del repositorio primero se validara la base de datos para
    referenciada a tablas principales mediante llaves foraneas y por indices
 
 * El query que se usaria para la creación de la tabla seria
-   CREATE TABLE `history_like` (
+*CREATE TABLE `history_like` (
    `id` int(11) NOT NULL AUTO_INCREMENT,
    `id_user` int(11) NOT NULL,
    `id_propertie` int(11) NOT NULL,
